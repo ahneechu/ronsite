@@ -1,0 +1,128 @@
+/*
+ Theme Name:   Themify Base Child
+ Theme URI:    
+ Description:  Themify Base Child Theme
+ Author:       Anne Chu
+ Template:     themify-base
+ Version:      1.0.0
+ Text Domain:  themify-base-child
+*/
+
+
+@import url("../themify-base/style.css");
+@import url("fontello-social/css/fontello.css");
+
+/************************************************************************************
+HEADER
+*************************************************************************************/
+
+#headerwrap {
+	background: url(http://localhost:8888/wp-content/uploads/2014/05/cropped-DNA_1.jpg) no-repeat scroll top;
+	background-size: cover;
+	margin: 0;
+	border-bottom: 2px solid #e7e7e7;
+}
+
+#header {
+	padding: 175px 0;
+}
+
+/* 
+SITE LOGO
+================================================ */
+#site-logo{
+	margin: -90px 0 20px;
+}
+
+#site-logo a {
+	text-decoration: none;
+	/*color: #fcfcfc;*/
+	color: #FFF;
+	text-shadow: 2px 2px 2px #000; 
+}
+
+/* 
+SITE DESCRIPTION
+================================================ */
+#site-description {
+	font: lighter 1.5em/1.5em 'Open Sans', sans-serif;
+	color: #E2E5EE;
+	text-shadow: 1.5px 1.5px 1.5px #000; 
+}
+
+/************************************************************************************
+STRUCTURE
+*************************************************************************************/
+
+.pagewidth{
+	padding: 10px;
+}
+
+#sidebar {
+	width: 150px;
+}
+
+#content {
+width: 750px;
+float: left; 
+padding: 5% 10% 3% 0;
+margin: 0 auto;
+text-align: justify;
+}
+
+.post-content{
+	border-bottom: 1px solid #e7e7e7;
+}
+
+/************************************************************************************
+POST
+*************************************************************************************/
+
+.post-image{
+	text-align: center;
+}
+
+/************************************************************************************
+SIDEBAR
+*************************************************************************************/
+
+
+.widget {
+	margin: 0;
+}
+
+.widget li a:hover{
+	text-decoration: none;
+	color: #c3c7c7;
+}
+
+.sticky{
+	position: fixed;  
+    width: 100%;  
+    left: 0;  
+    top: 0;  
+    z-index: 100;  
+    border-top: 0;  
+}
+
+/************************************************************************************
+SOCIAL ICONS
+*************************************************************************************/
+.social-icons i{
+	padding: 10px 5px 0 0;
+}
+
+.social-icons a:hover{
+	color: #c3c7c7;
+}
+/************************************************************************************
+FOOTER
+*************************************************************************************/
+
+.footer-nav{
+	display: inline;
+}
+
+.footer-nav li {
+	display: inline;
+}
