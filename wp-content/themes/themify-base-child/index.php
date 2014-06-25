@@ -10,6 +10,12 @@
 	<!-- layout -->
 	<div id="layout" class="pagewidth clearfix">
 
+		<?php
+			/////////////////////////////////////////////
+			// Sidebar
+			/////////////////////////////////////////////
+			get_sidebar(); ?>
+			
 		<!-- content -->
 		<?php themify_content_before(); //hook ?>
 		<div id="content" class="clearfix">
@@ -103,11 +109,7 @@
 		<?php themify_content_after(); //hook ?>
 		<!-- /#content -->
 
-		<?php
-		/////////////////////////////////////////////
-		// Sidebar
-		/////////////////////////////////////////////
-		get_sidebar(); ?>
+		
 
 	</div>
 	<!-- /#layout -->

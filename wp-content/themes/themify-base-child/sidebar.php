@@ -13,7 +13,7 @@ if ( 'sidebar-none' == $sidebar ) {
 
 <?php themify_sidebar_before(); // hook ?>
 
-<aside id="sidebar">
+<aside id="sidebar" class="sticky">
 
 	<?php themify_sidebar_start(); // hook ?>
 

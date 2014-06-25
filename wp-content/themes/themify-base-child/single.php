@@ -7,6 +7,14 @@
 ?>
 <?php get_header(); ?>
 
+<!-- layout-container -->
+<div id="layout" class="pagewidth clearfix">	
+	<?php 
+	/////////////////////////////////////////////
+	// Sidebar							
+	/////////////////////////////////////////////
+	get_sidebar(); ?>
+
 <?php if ( have_posts() ) :	while ( have_posts() ) : the_post(); ?>
 
 		<!-- layout-container -->
@@ -27,26 +35,13 @@
 			 ));
 			?>
 
-			<?php if ( ! is_attachment() ) : ?>
-
-				<?php get_template_part( 'includes/post-nav' ); ?>
-
-				<?php comments_template(); ?>
-
-			<?php endif; ?>
-
-			<?php themify_content_end(); // hook ?>
-		</div>
+			
 		<!-- /content -->
 		<?php themify_content_after(); // hook ?>
 
 <?php endwhile; endif; ?>
 
-<?php
-/////////////////////////////////////////////
-// Sidebar							
-/////////////////////////////////////////////
-get_sidebar(); ?>
+
 
 </div>
 <!-- /layout-container -->
